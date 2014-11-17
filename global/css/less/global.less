@@ -1,0 +1,210 @@
+@import "modules/group.less";
+
+@path-url: "http://localhost:999";
+
+hr{
+	clear: both;
+	position: relative;
+	float: none;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: "Annie Use Your Telescope";
+}
+
+/* LINKS GLOBAL */
+a{
+	font-family: "Annie Use Your Telescope";
+	text-decoration: none;
+	color: @065;
+}
+
+/* Padronização de paddings entre outros */
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+/* MENSAGEM DE BROWSER */
+.browserversion{
+	display: none;
+	background: url("../../../global/css/images/nuvem.png") repeat-x;
+	height: 127px;
+}
+
+.browserversion .msgn{
+	width: 880px;
+	margin: 0 auto;
+	color: @fff;
+	font-size: 16px;
+	line-height: 26px;
+	padding: 13px 0;
+	position: relative;
+}
+
+.browserversion .msgn .close{
+	.replacetext;
+	background: url("../../../global/css/images/close.png") no-repeat;
+	position: absolute;
+	width: 21px;
+	height: 26px;
+	top: 4px;
+	right: -23px;
+}
+
+.browserversion .msgn a{
+	color: @fff;
+	font-size: 14px;
+}
+
+.browserversion .msgn .link{
+	padding-bottom: 9px;
+	background: url("../../../global/css/images/cliqueaviso.png") left bottom no-repeat;
+
+	&:hover{
+		background: url("../../../global/css/images/cliqueaviso-hover.png") left bottom no-repeat;
+	}
+}
+
+.browserversion .msgn .traco{
+	padding-bottom: 5px;
+	background: url("../../../global/css/images/olhaso.png") left bottom no-repeat;
+}
+
+/* SETA VOLTAR AO TOPO */
+
+.back-top{
+	z-index: 9999;
+	background: url("../../../global/css/images/back-top.png") no-repeat top center;
+	font-size: 13px;
+	width: 100px;
+	text-align: center;
+	height: 50px;
+	bottom: 50px;
+	opacity: 0;
+    position: fixed;
+    right: 40px;
+    color: @b70;
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+
+    &:hover{
+  		background-image: url("../../../global/css/images/back-top-hover.png");
+    }
+}
+
+.back-top span{
+	position: absolute;
+	bottom: -20px;
+	text-align: center;
+	display: block;
+	width: 100%;
+}
+
+/* ALIGN */
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+/* MSG ERROR */
+
+.field-validation-error{
+	color: @d80;
+	font-size: 14px;
+	margin-top: 7px;
+	margin-bottom: 0 !important;
+}
+
+.field-validation-sucess{
+	color: @008;
+	display: none;
+	font-size: 14px;
+	margin-bottom: 0;
+
+		&.show{
+			display: inline-block;
+		}
+
+		&.hide{
+			display: none;
+		}
+}
+
+/* FOOTER */
+.footer{
+	background: url("../../../global/css/images/bg-footer.png") repeat-x;
+    width: 100%;
+    height: 112px;
+    position: absolute;
+}
+
+.footer .center{
+	margin: 0 auto;
+    position: relative;
+    width: 980px;
+    top: 42px;
+}
+
+.footer .regras{
+	padding: 20px 0;
+	float: left;
+}
+
+.footer .regras li{
+	font-family: "Annie Use Your Telescope";
+	display: inline;
+	color: @fff;
+}
+.footer .regras li:first-child{
+	padding: 0 20px 0 0px;
+}
+
+.footer .regras li a{
+	color: @fff;
+	font-size: 13px;
+	padding: 0 20px;
+	text-decoration: none;
+
+	&:hover{
+		text-decoration: underline;
+	}
+}
+.footer .regras li a.redbull{
+	font-size: 16px;
+	padding-left: 0;
+}
+
+.footer .social{
+	float: right;
+	padding: 12px 0;
+}
+
+.footer .social li{
+	display: inline;
+	padding: 0 8px;
+}
+
+.footer .social li a{
+	display: inline-block;
+	text-decoration: none;
+
+	&:hover{
+		position: relative;
+    	top: -3px;
+	}
+}
+
+.dhide{
+	display: none;
+}

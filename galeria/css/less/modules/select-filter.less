@@ -1,0 +1,182 @@
+/*======================================================================
+  Selectric
+======================================================================*/
+
+.selectricWrapper {
+  position: relative;
+  margin: 0 0 10px;
+  width: 280px !important;
+  cursor: pointer;
+}
+
+.selectricResponsive {
+  width: 100%;
+}
+
+.selectric {
+  background: url("../images/box-filter.png") no-repeat right center;
+  .bgsize(106%);
+  position: relative;
+  border: 0;
+  .radius(0px);
+  height: 45px;
+  padding-left: 13px;
+  width: 280px !important;
+  float: right;
+
+    &:hover .button{
+      opacity: 0.8;
+    }
+}
+
+.selectric .label {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 30px 0 0;
+  padding: 6px;
+  font-size: 14px;
+  line-height: 31px;
+  color: #757575;
+  min-height: 40px;
+}
+
+.selectric .button {
+  background: url("../images/box-filter-arrow.png") no-repeat center left;
+  .replacetext;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 44px;
+  text-align: center;
+}
+
+.selectric .button:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 0;
+  height: 0;
+}
+
+.selectricHover .selectric {
+}
+
+.selectricHover .selectric .button {
+  color: #888;
+}
+
+.selectricHover .selectric .button:after {
+}
+
+.selectricOpen {
+  z-index: 9999;
+}
+
+.selectricOpen .selectric {
+  z-index: 9999;
+}
+
+.selectricOpen .selectricItems {
+  display: block;
+}
+
+.selectricDisabled {
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.selectricHideSelect {
+  position: relative;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
+
+.selectricHideSelect select {
+  position: absolute;
+  left: -100%;
+  display: none;
+}
+
+.selectricInput {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  outline: none !important;
+  *font: 0/0 a !important;
+}
+
+.selectricTempShow {
+  position: absolute !important;
+  visibility: hidden !important;
+  display: block !important;
+}
+
+/* Items box */
+
+.selectricItems {
+  display: none;
+  overflow: auto;
+  position: absolute;
+  right: 4px;
+  top: 100%;
+  background-color: @fff;
+  width: 272px !important;
+  z-index: 9998;
+}
+
+.selectricItems ul,
+.selectricItems li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  min-height: 20px;
+}
+
+.selectricItems li {
+  display: block;
+  padding: 5px 5px 5px 15px;
+  color: #666;
+  cursor: pointer;
+  border-bottom: 1px solid #CCC;
+
+    &:last-child{
+      border-bottom: 0;
+    }
+
+    &:hover{
+      background-color: #f1f1f1;
+    }
+}
+
+.selectricItems li.selected {
+  color: #444;
+}
+
+.selectricItems li:hover {
+  color: #444;
+}
+
+.selectricItems li.disabled {
+  color: #BBB;
+  cursor: default;
+}

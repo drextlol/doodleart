@@ -1,0 +1,822 @@
+@import "../../../global/css/less/global.less";
+@import "modules/select.less";
+
+html.login{
+	background: url("../images/bg-login.jpg") no-repeat top center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+		body{
+			font-family: "Annie Use Your Telescope";
+		}
+
+		/* Tela de login */
+		h1.logo{
+			.replacetext;
+			background: url("../images/lg-login.png") no-repeat;
+			width: 350px;
+			height: 238px;
+			margin: 3% auto 0;
+		}
+
+		h2.logo-subtitle{
+			font-size: 18px;
+			color: @000;
+			text-transform: uppercase;
+			text-align: center;
+			margin: 10px auto 40px;
+		}
+
+		.center{
+			width: 350px;
+			margin: 0 auto;
+		}
+
+		.form-login{
+			.rw-large-1{
+				position: relative;
+			}
+		}
+		label{
+
+			span.msgn-erro,
+			span.msgn-erro-pass{
+				display: none;
+			}
+		}
+
+		label.erro{
+			position: relative;
+
+			span{
+				color: @d80;
+			}
+
+			span.msgn-erro{
+				position: absolute;
+				display: inline-block;
+				right: 0;
+				top: 0;
+				color: @d80;
+				font-size: 14px;
+				margin-right: 5px;
+				text-align: right;
+			}
+
+			span.msgn-erro-pass{
+				position: absolute;
+				display: inline-block;
+				right: 0;
+				top: 0;
+				color: @d80;
+				font-size: 14px;
+				margin-right: 5px;
+				text-align: right;
+			}
+
+			input{
+				background-image: url("../images/input-login-erro.png");
+			}
+		}
+
+		.recover span.msgn-erro{
+			right: 11px !important;
+			top: 36px !important;
+		}
+
+		input{
+			background: url("../images/input-login.png") no-repeat;
+			font-family: "Annie Use Your Telescope";
+			height: 44px;
+			font-size: 15px;
+		}
+
+		button.submit{
+			background: url("../images/bt-login.png") no-repeat;
+			font-family: "Annie Use Your Telescope";
+			cursor: pointer;
+			display: block;
+			border: 0;
+			width: 100%;
+			height: 62px;
+			color: @fff;
+			font-size: 24px;
+			font-weight: normal;
+
+				&:hover{
+					opacity: 0.9;
+				}
+		}
+
+		.remember-login{
+			text-align: right;
+			padding-right: 6px;
+		}
+		.remember-pass{
+			text-decoration: underline;
+			font-size: 16px;
+			color: @000;
+
+				&:hover{
+					text-decoration: none;
+				}
+		}
+}
+
+/* Fim da tela de login */
+
+/* Master Page Painel administrativo */
+
+.admin{
+
+	height: 100%;
+
+	body{
+		height: 100%;
+        font-family: "Proxima Nova Regular";
+
+		.header{
+			background-color: @354;
+			width: 100%;
+			height: 90px;
+			display: table;
+			z-index: 200;
+			position: relative;
+
+				.center{
+					display: table;
+					width: 980px;
+					height: 100%;
+
+					.logo{
+						.replacetext;
+						margin-right: -68px;
+						background: url("../images/lg-redbull-admin.png") no-repeat center center @fff;
+						display: block;
+						width: 150px;
+						height: 90px;
+					}
+
+					.breadcrumb{
+						font-family: "Proxima Nova Bold";
+						color: @fff;
+						display: table-cell;
+						vertical-align: middle;
+						font-size: 18px;
+						padding-left: 20px;
+						text-align: left;
+
+							span{
+								color: @b9c;
+							}
+
+							.space{
+								width: 300px;
+								text-align: left;
+							}
+					}
+
+					.logado{
+						height: 100%;
+						display: table-cell;
+						vertical-align: middle;
+						text-align: right;
+
+							h3{
+								font-family: "Proxima Nova Bold";
+								color: @fff;
+								font-size: 16px;
+							}
+
+							a{
+								font-family: "Proxima Nova Light Italic";
+								color: @b9c;
+								font-size: 14px;
+								text-decoration: none;
+
+									&:hover{
+										text-decoration: underline;
+									}
+							}
+					}
+				}
+		}
+
+		.menu{
+			margin-top: -90px;
+			margin-right: 20px;
+			width: 150px;
+
+			background-color: @dbd;
+			position: relative;
+			z-index: 100;
+			float: left;
+			font-family: "Proxima Nova Bold";
+
+				.list{
+					display: block;
+					width: 100%;
+					position: relative;
+					margin-top: 90px;
+
+						li{
+							width: 100%;
+							display: block;
+							position: relative;
+
+								a{
+									display: block;
+									font-size: 14px;
+									color: @4f6;
+									text-decoration: none;
+									text-align: center;
+									text-transform: uppercase;
+									width: 100%;
+									padding: 30px 0;
+									border-bottom: 1px solid @fff;
+                                    font-family: "Proxima Nova Bold";
+
+										&.selected:after{
+											width: 0;
+											height: 0;
+											border-top: 10px solid transparent;
+											border-bottom: 10px solid transparent;
+											border-right: 10px solid @fff;
+											position: absolute;
+											right: 0;
+											top: 50px;
+											content: "";
+											display: block;
+										}
+
+										i{
+											margin-bottom: 10px;
+										}
+
+										span{
+											line-height: 18px;
+										}
+								}
+						}
+				}
+		}
+
+		.widget{
+			background-color: @f4f;
+			.radius(10px);
+			padding: 20px;
+			width: 100%;
+			margin-bottom: 10px;
+
+				.pager{
+					text-align: center;
+
+					li{
+						display: inline-block;
+
+							a{
+								.radius(100px);
+								font-family: "Proxima Nova Regular";
+								color: @878;
+								font-size: 15px;
+								width: 13px;
+								height: 13px;
+								.replacetext;
+								text-align: center;
+								text-decoration: none;
+								background-color: @dbd;
+								display: inline-block;
+
+									&:hover{
+										background-color: @aaa;
+									}
+
+									&.active{
+										background-color: @878;
+									}
+							}
+					}
+				}
+
+				.tpages{
+					display: table-cell;
+					height: 53px;
+					vertical-align: middle;
+				}
+
+				.rw-list{
+					.rw-small-2{
+						margin-bottom: 0;
+						margin-right: 0;
+						width: 50%;
+					}
+
+					.selectricItems{
+						right: -48px;
+					}
+
+					.rw-small-3{
+						margin-bottom: 0;
+					}
+
+					.rw-small-3.last{
+						margin-right: 0;
+
+							span{
+								display: table-cell;
+								text-align: right;
+								color: @354;
+								font-family: "Proxima Nova Regular";
+								text-transform: uppercase;
+								padding-right: 20px;
+								vertical-align: middle;
+								font-size: 15px;
+							}
+
+							.selectricWrapper{
+								display: table-cell;
+								width: 100%;
+							}
+
+							.selectric{
+								width: 180px;
+							}
+					}
+				}
+
+				.wg-title{
+					font-family: "Proxima Nova Bold";
+					font-size: 24px;
+					color: @354;
+					margin-bottom: 20px;
+
+						span{
+							line-height: 55px;
+						}
+
+						.wg-search-form{
+
+								span{
+									float: left;
+								}
+
+								input{
+									width: 445px;
+									height: 55px;
+									padding-right: 63px;
+									font-size: 16px;
+									float: right;
+								}
+
+								.submit{
+									background-image: url("../images/lupa-01.png");
+									width: 67px;
+									height: 55px;
+								}
+						}
+
+						&.num-voto{
+							margin: 0;
+						}
+
+						&.wg-border{
+							border-bottom: 1px solid @d4d;
+							padding-bottom: 5px;
+						}
+
+						.block,
+						.btn-trash{
+							display: none;
+						}
+				}
+
+				.wg-no-border{
+					border: 0;
+					margin-bottom: 0;
+				}
+
+				.wg-sub-title{
+					font-family: "Proxima Nova Bold";
+					font-size: 15px;
+					text-transform: uppercase;
+					color: @676;
+					margin-bottom: 20px;
+				}
+
+				.wg-3-title{
+					font-family: "Proxima Nova Bold";
+					font-size: 20px;
+					color: @354;
+					margin-bottom: 5px;
+				}
+
+				.wg-4-title{
+					font-family: "Proxima Nova Regular";
+					font-size: 18px;
+					text-transform: uppercase;
+					color: @354;
+					margin-bottom: 10px;
+				}
+
+				.item{
+					margin-bottom: 25px;
+
+						&.last{
+							margin-bottom: 0;
+						}
+				}
+
+				.wg-search-form{
+					position: relative;
+
+					.input{
+						height: 69px;
+						font-size: 18px;
+						font-family: "Proxima Nova Light Italic";
+						padding: 0 80px 0 15px;
+					}
+
+					.submit{
+						.replacetext;
+						background: url("../images/lupa.png") no-repeat center center;
+						border: 0;
+						width: 65px;
+						height: 69px;
+						cursor: pointer;
+						position: absolute;
+						right: 0;
+						top: 0;
+
+							&:hover{
+								opacity: 0.8;
+							}
+					}
+				}
+
+				.info-stats{
+					margin-bottom: 0;
+
+					&.vd{
+						color: @0a9;
+						border-left: 3px solid;
+						border-color: @0a9;
+						padding-left: 20px;
+					}
+
+					&.be{
+						color: @354;
+						border-left: 3px solid;
+						border-color: @354;
+						padding-left: 20px;
+					}
+
+					.bod-cad{
+						display: table-cell;
+						width: auto;
+						vertical-align: middle;
+						font-size: 62px;
+						font-family: "Proxima Nova Bold";
+					}
+
+					.bod-inf{
+						display: table-cell;
+						padding-left: 20px;
+						width: auto;
+						vertical-align: middle;
+						font-family: "Proxima Nova Regular";
+						font-size: 20px;
+					}
+				}
+
+				.list-doodle{
+
+					.row .line{
+						margin-top: 15px;
+						margin-bottom: 40px;
+					}
+
+					.row:last-child{
+
+						.line{
+							margin-bottom: 20px;
+						}
+					}
+
+					.rw-small-3{
+
+						&.first{
+							width: 160px;
+						}
+
+						&.meio{
+							margin-right: 0;
+							width: 420px;
+						}
+
+						&.last{
+							float: right;
+							margin-right: 0;
+							width: 140px;
+						}
+
+						.img-doodle03{
+							width: 160px;
+							height: 133px;
+						}
+
+						.edit-doodle{
+							width: 130px;
+							padding: 17px 11px 14px 38px;
+							background-image: url("../../../global/css/images/edit.png");
+							background-repeat: no-repeat;
+							background-position: 17px center;
+							float: right;
+						}
+
+						.edit-universidade{
+							padding: 11px 6px 10px 24px;
+
+								&.change{
+									background-image: url("../images/canceled.png");
+								}
+						}
+					}
+				}
+
+				.list-universidade{
+					.rw-small-3{
+
+						&.meio,&.last{
+							margin-bottom: 0;
+						}
+					}
+
+					.line{
+						margin-bottom: 20px !important;
+					}
+				}
+		}
+
+
+		.content{
+			margin-top: 20px;
+			width: 820px;
+			float: left;
+
+				input{
+					font-family: "Proxima Nova Regular Italic";
+					font-size: 17px;
+					border: 1px solid @d4d;
+					.radius(10px);
+					color: @676;
+
+						&.error{
+							border-color: red;
+						}
+				}
+
+				label{
+
+					small{
+						font-family: "Proxima Nova Bold";
+						color: @676;
+						font-size: 15px;
+						text-transform: uppercase;
+					}
+
+					&.error{
+						font-family: "Proxima Nova Regular";
+						font-size: 14px;
+						color: red;
+						margin-left: 10px;
+						margin-top: 5px;
+					}
+				}
+
+				.line{
+					border-bottom: 1px solid @d4d;
+					display: block;
+					width: 100%;
+					height: 1px;
+					margin: 20px 0;
+				}
+
+				.home-page{}
+
+				.edit-dados{
+					display: none;
+				}
+
+				.form_doodle .rw-small-2{
+					min-height: 111px;
+				}
+
+				.edit-disabled{
+
+					.block{
+						display: inline-block !important;
+						.replacetext;
+						background-image: url("../../../global/css/images/block.png");
+						background-repeat: no-repeat;
+						background-position: center;
+						float: right;
+						top: 7px;
+						position: relative;
+						border: 0;
+						margin-right: 10px;
+
+							&.active{
+								background-color: @333;
+							}
+					}
+
+					.btn-trash{
+						display: inline-block !important;
+						.replacetext;
+						background-image: url("../../../global/css/images/trash.png");
+						background-repeat: no-repeat;
+						background-position: center;
+						float: right;
+						top: 7px;
+						position: relative;
+						border: 0;
+						margin-right: 10px;
+
+							&:active{
+								background-color: @333 !important;
+							}
+
+							&.last{
+								margin: 0;
+							}
+					}
+
+					.edit-dados{
+						display: inline-block;
+						background-image: url("../../../global/css/images/edit.png");
+						background-position: 10px center;
+						background-repeat: no-repeat;
+						width: 100px;
+						padding: 10px 0 8px 20px;
+						float: right;
+						font-size: 13px;
+
+							&.disabled{
+								background-color: @e0e;
+								border-color: @e0e;
+								cursor: default;
+							}
+					}
+
+					.btn-cadastrar{
+						&.disabled{
+							background-color: @33b;
+							border: 0;
+							opacity: 0.6;
+							cursor: default;
+						}
+					}
+				}
+
+				/* Imagens de doodles */
+
+				.img-doodle01{
+					width: 261px;
+					height: 217px;
+				}
+
+				.box-img-doodle{
+					height: 262px;
+					border: 4px dashed @354;
+
+					&.active{
+						border: 0;
+						margin: 0;
+
+						.img-doodle02.active{
+							margin: 0;
+							height: 356px;
+						}
+					}
+				}
+
+				.img-doodle02{
+						margin: 95px 130px;
+
+						.wg-4-title{
+							text-transform: none;
+							text-align: center;
+							font-size: 24px;
+						}
+
+						.spr05{
+							margin-top: 20%;
+							margin-bottom: 10px;
+						}
+				}
+
+				.upload-image{
+					text-align: center;
+					margin-top: 75px;
+
+					.text-upload{
+						color: @354;
+						font-family: "Proxima Nova Light";
+						font-size: 15px;
+						margin-bottom: 20px;
+					}
+				}
+
+				.file-input{
+					display: none;
+				}
+
+				.cad-universidades{
+					.first{
+						width: 50%;
+						margin-right: 3%
+					}
+
+					.meio{
+						margin-right: 0;
+					}
+
+					.last{
+						margin-right: 0;
+						width: 16%;
+						margin-bottom: 0;
+						margin-top: 22px;
+						float: right;
+
+							.btn-small{
+								padding: 16px 0;
+								text-align: center;
+							}
+					}
+				}
+		}
+
+		.not-found{
+			margin-bottom: 30px;
+			display: block;
+			font-size: 16px;
+		}
+
+		.block-check{
+			float: left;
+			width: auto;
+		}
+
+		.check-small{
+			> span{
+				height: 59px;
+				display: table-cell;
+				vertical-align: middle;
+				margin-bottom: 0;
+				padding-left: 10px;
+				font-size: 15px;
+				color: @354;
+			}
+		}
+	}
+
+	/* Definição de dados da modal */
+	.rw-modal{
+		.radius(0) !important;
+		padding: 90px 40px !important;
+		height: 294px;
+		background: @fff;
+		text-align: center;
+
+		.buttons-mask{
+			margin-top: 40px;
+
+			a{
+				width: 150px;
+				margin-right: 10px;
+			}
+			.btn-conf-excluir{
+				background-image: url("../../../global/css/images/trash.png");
+				background-position: 23px center;
+				background-repeat: no-repeat;
+				text-align: right;
+			}
+		}
+	}
+
+	.mskbox{
+		position: relative;
+		width: 60%;
+		margin: 10% auto;
+	}
+}
+
+.block-doodle{
+	.blk{
+		font-family: "Proxima Nova Regular";
+		font-size: 15px;
+		color: @d80;
+	}
+}

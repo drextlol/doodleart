@@ -1,0 +1,33 @@
+.replacetext{
+	text-indent: 160%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.radius(@r){
+	-webkit-border-radius: @r;
+	-moz-border-radius: @r;
+	border-radius: @r;
+}
+
+.filter(@type, @value){
+	filter:@type(@value);
+	-o-filter:@type(@value);
+	-ms-filter:@type(@value);
+	-moz-filter:@type(@value);
+	-webkit-filter:@type(@value);
+}
+
+.bgsize(@val){
+	-webkit-background-size: @val;
+	-moz-background-size: @val;
+	-o-background-size: @val;
+	background-size: @val;
+}
+
+.rotate (@deg) {
+	-webkit-transform: rotate(@deg);
+	-moz-transform: rotate(@deg);
+	-ms-transform: rotate(@deg);
+	-o-transform: rotate(@deg);
+}

@@ -1,0 +1,1225 @@
+/* IMPORTS MODULES */
+@import "../../../global/css/less/global.less";
+@import "modules/group.less";
+
+/* BODY GLOBAL */
+body{
+	background: url("../../../global/css/images/bg-body.jpg") top left;
+	overflow-x: hidden;
+}
+
+/* BODY GLOBAL CLASS */
+.page-regulamento .bg-left{
+	background: url("../images/bg-left.png") no-repeat top center;
+	background-size: 100%;
+	position: absolute;
+	display: block;
+	left: -310px;
+	width: 60%;
+	height: 1740px;
+	margin-top: 140px;
+}
+
+.page-regulamento .bg-right{
+	background: url("../images/bg-right.png") no-repeat top center;
+	background-size: 100%;
+	position: absolute;
+	right: -480px;
+	display: block;
+	height: 1820px;
+	width: 60%;
+	margin-top: 140px;
+}
+
+.page-regulamento .menu{
+	display: none;
+}
+
+.topo-redbull{
+	width: 100%;
+	height: 40px;
+}
+
+/* DETALHES */
+
+.linhax{
+	background: url("../images/linha-x.png") no-repeat;
+	width: 370px;
+	height: 5px;
+	display: block;
+}
+
+.detalhe{
+	background: url("../images/detalhe.png") no-repeat;
+	background-size: 100%;
+	display: block;
+    height: 70px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.detalhenuvem{
+	background: url("../images/nuvem-top.png") no-repeat;
+	background-size: 100%;
+	display: block;
+    height: 70px;
+    width: 100%;
+}
+
+.riscomodal{
+	background: url("../images/risco-modal.jpg") no-repeat;
+	background-size: 100%;
+	width: 100%;
+	height: 20px;
+	display: block;
+}
+
+/* MENU */
+.menu{
+	margin: 70px auto 50px auto;
+	width: 910px;
+	display: table;
+}
+
+.menu li{
+	display: table-cell;
+	text-align: center;
+}
+
+.menu li a{
+	display: inline-block;
+	height: 35px;
+}
+
+.menu li a.mn01{
+	width: 183px;
+
+	&:hover{
+		background: url("../images/menu/mn01.gif") no-repeat bottom center;
+	}
+}
+
+.menu li a.mn02{
+	width: 109px;
+
+	&:hover{
+		background: url("../images/menu/mn02.gif") no-repeat bottom center;
+	}
+}
+
+.menu li a.mn03{
+	width: 143px;
+
+	&:hover{
+		background: url("../images/menu/mn03.gif") no-repeat bottom center;
+	}
+}
+
+.menu li a.mn04{
+	width: 120px;
+
+	&:hover{
+		background: url("../images/menu/mn04.gif") no-repeat bottom center;
+	}
+}
+
+.menu li a.mn05{
+	width: 142px;
+
+	&:hover{
+		background: url("../images/menu/mn05.gif") no-repeat bottom center;
+	}
+}
+
+/* LOGO */
+.logo{
+	width: 1326px;
+	margin: 0 auto 70px auto;
+	position: relative;
+}
+
+.logo .ico01{
+	background: url("../images/ico01.gif") no-repeat;
+	background-size: 100%;
+	width: 368px;
+	height: 765px;
+	position: absolute;
+	left: 0;
+}
+
+.logo .ico02{
+	background: url("../images/ico02.gif") no-repeat;
+	background-size: 100%;
+	width: 728px;
+	height: 562px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.logo .ico03{
+	background: url("../images/ico03.png") no-repeat;
+	background-size: 100%;
+	animation-delay: 0.7s;
+	width: 545px;
+	height: 300px;
+	margin: -90px auto 0;
+}
+
+.logo .ico04{
+	background: url("../images/ico04.png") no-repeat;
+	background-size: 100%;
+	width: 368px;
+	height: 916px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 99;
+}
+.logo .gotas{
+	background: url("../images/gotas.gif") no-repeat;
+	background-size: 100%;
+	animation-delay: 1s;
+	opacity: 0;
+	position: absolute;
+	bottom: -70px;
+	right: 102px;
+	width: 110px;
+	height: 232px;
+	z-index: 9;
+}
+
+/* TEXTO IMAGINE */
+
+.imagine{
+	.text;
+	position: relative;
+	width: 873px;
+	height: 117px;
+	margin: 0 auto 10px auto;
+}
+
+.imagine .arabesco{
+	opacity: 0;
+}
+
+.imagine .arabesco.right{
+	background: url("../images/arabescos.png") no-repeat right center;
+	position: relative;
+	overflow: hidden;
+	position: absolute;
+	width: 215px;
+	height: 56px;
+	right: -22px;
+	top: 0px;
+}
+
+.imagine .arabesco.left{
+	background: url("../images/arabescos.png") no-repeat right bottom;
+	position: relative;
+	overflow: hidden;
+	position: absolute;
+	width: 221px;
+	height: 56px;
+	left: -39px;
+	top: 0px;
+}
+
+/* ESTUDANTE ENTEDIADO */
+
+.estudante{
+	width: 1212px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.estudante .ico05{
+	background: url("../images/ico05.png") no-repeat;
+	background-size: 100%;
+	animation-delay: 0s;
+	width: 630px;
+	height: 300px;
+	position: absolute;
+	overflow: hidden;
+	opacity: 0;
+}
+
+.estudante .ico06{
+	background: url("../images/ico06.gif") no-repeat;
+	background-size: 100%;
+	animation-delay:1s;
+	width: 138px;
+	height: 158px;
+	right: 440px;
+	opacity: 0;
+	position: absolute;
+}
+
+.estudante .ico07{
+	background: url("../images/ico07.png") no-repeat;
+	background-size: 100%;
+	animation-delay:1.5s;
+	opacity: 0;
+	width: 429px;
+	height: 336px;
+	position: absolute;
+	overflow: hidden;
+}
+
+/* PODE NASCER TEXTO */
+
+.podenascer{
+	background: url("../images/riscos.gif") no-repeat center center;
+	position: relative;
+	margin-top: 281px;
+	margin-bottom: 20px;
+	padding: 32px 0;
+}
+
+.podenascer p{
+	margin: 15px 0 0 0;
+	padding: 0;
+	.text;
+}
+
+.podenascer .arrow{
+	width: 620px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.podenascer .arrow-left-bottom{
+	background: url("../images/arrow-left-bottom.png") no-repeat top center;
+	background-size: 80%;
+	position: absolute;
+	width: 60px;
+	height: 186px;
+	top: -37px;
+	left: 24px;
+	opacity: 0;
+	z-index: 999;
+}
+
+.podenascer .arrow-right-bottom{
+	background: url("../images/arrow-right-bottom.png") no-repeat top center;
+	background-size: 80%;
+	width: 60px;
+	height: 186px;
+	position: absolute;
+	right: 24px;
+	top: -36px;
+	opacity: 0;
+	z-index: 999;
+}
+
+/* RABISCOS DOODLE LOGO */
+
+.rabiscos{
+	background: url("../images/rabiscaiada.gif") no-repeat;
+	background-size: 100%;
+	opacity: 0;
+	width: 1326px;
+	height: 800px;
+	margin: 0 auto;
+}
+
+.rabiscos .doodle{
+	background: url("../images/doodles.gif") no-repeat;
+	background-size: 100%;
+	height: 168px;
+    margin: 0 auto;
+    position: relative;
+    top: 300px;
+    width: 600px;
+}
+
+.rabiscos .doodle p{
+	color: @0f4;
+    display: block;
+    font-size: 21px;
+    line-height: 32px;
+    position: relative;
+    text-align: center;
+    top: 151px;
+}
+
+/* E O QUE SE FAZ COM ISSO */
+
+.oquesefaz{
+	background: url("../images/flechas-doodle.gif") no-repeat 0 -4px;
+	background-size: 100%;
+	width: 1340px;
+	margin: 0 auto;
+	text-align: center;
+	min-height: 560px;
+}
+
+.oquesefaz h1{
+	background: url("../images/eoquesefaz.png") no-repeat center center;
+	background-size: 100%;
+	width: 860px;
+	height: 53px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 5px auto 15px auto;
+}
+
+.oquesefaz p{
+	color: @000;
+	font-size: 33px;
+    margin-bottom: 20px;
+}
+.oquesefaz p.secon{
+	font-size: 35px;
+}
+
+/* POR ISSO */
+.porisso{
+	background-size: 100%;
+	width: 1280px;
+	height: 930px;
+	position: relative;
+	margin: -50px auto 0 auto;
+}
+
+.porisso .context{
+	background: url("../images/box.gif") no-repeat;
+	background-size: 100%;
+	width: 600px;
+	height: 460px;
+	top: 236px;
+	position: relative;
+	margin: 0 auto;
+	z-index: 999;
+}
+
+.porisso .context h1{
+	background: url("../images/porisso.png") no-repeat;
+	background-size: 100%;
+	width: 460px;
+	height: 163px;
+	top: 80px;
+	position: relative;
+	.replacetext;
+	margin: 0 auto;
+}
+
+.porisso .context p{
+	text-align: center;
+	position: relative;
+	font-size: 22px;
+	line-height: 32px;
+	top: 86px;
+}
+
+.porisso .context p span{
+	background: url("../images/tarjapreta.jpg") repeat-x 0 4px;
+	color: @fff;
+	padding: 0 5px 5px;
+}
+
+.porisso .circulos{
+	z-index: 99;
+	left: -110px;
+    position: relative;
+    top: -460px;
+}
+
+.porisso .circulos li{
+	position: absolute;
+	left: 572px;
+	top: 317px;
+}
+
+.porisso .latas {
+    left: -113px;
+    position: relative;
+    top: -460px;
+}
+
+.porisso .gotas {
+    left: -120px;
+    position: relative;
+    top: -463px;
+}
+
+.porisso .circulos .cr01,
+.porisso .circulos .cr02,
+.porisso .circulos .cr03,
+.porisso .circulos .cr04,
+.porisso .circulos .cr05,
+.porisso .circulos .cr06,
+.porisso .circulos .cr07,
+.porisso .circulos .cr08,
+.porisso .circulos .cr09,
+.porisso .circulos .cr10,
+.porisso .circulos .cr11,
+.porisso .circulos .cr12,
+.porisso .circulos .cr13,
+.porisso .circulos .cr14,
+.porisso .circulos .cr15,
+.porisso .circulos .cr16,
+.porisso .circulos .cr17,
+.porisso .circulos .cr18,
+.porisso .circulos .cr19,
+.porisso .circulos .cr20,
+.porisso .circulos .cr21{
+	animation-delay:1s;
+	z-index: 5;
+}
+
+.porisso .circulos .cr01{
+	background: url("../images/circulos/cr01.png") no-repeat;
+	background-size: 100%;
+	width: 266px;
+	height: 267px;
+}
+
+.porisso .circulos .cr02{
+	background: url("../images/circulos/cr02.png") no-repeat;
+	background-size: 100%;
+	width: 226px;
+	height: 240px;
+}
+
+.porisso .circulos .cr03{
+	background: url("../images/circulos/cr03.png") no-repeat;
+	background-size: 100%;
+	width: 286px;
+	height: 284px;
+}
+
+.porisso .circulos .cr04{
+	background: url("../images/circulos/cr04.png") no-repeat;
+	background-size: 100%;
+	width: 286px;
+	height: 284px;
+}
+
+.porisso .circulos .cr05{
+	background: url("../images/circulos/cr05.png") no-repeat;
+	background-size: 100%;
+	width: 257px;
+	height: 331px;
+}
+
+.porisso .circulos .cr06{
+	background: url("../images/circulos/cr06.png") no-repeat;
+	background-size: 100%;
+	width: 286px;
+	height: 286px;
+}
+
+.porisso .circulos .cr07{
+	background: url("../images/circulos/cr07.png") no-repeat;
+	background-size: 100%;
+	width: 282px;
+	height: 360px;
+}
+
+.porisso .circulos .cr08{
+	background: url("../images/circulos/cr08.png") no-repeat;
+	background-size: 100%;
+	width: 282px;
+	height: 283px;
+}
+
+.porisso .circulos .cr09{
+	background: url("../images/circulos/cr09.png") no-repeat;
+	background-size: 100%;
+	width: 263px;
+	height: 275px;
+}
+
+.porisso .circulos .cr10{
+	background: url("../images/circulos/cr10.png") no-repeat;
+	background-size: 100%;
+	width: 344px;
+	height: 336px;
+}
+
+.porisso .circulos .cr11{
+	background: url("../images/circulos/cr11.png") no-repeat;
+	background-size: 100%;
+	width: 346px;
+	height: 349px;
+}
+
+.porisso .circulos .cr12{
+	background: url("../images/circulos/cr12.png") no-repeat;
+	background-size: 100%;
+	width: 279px;
+	height: 284px;
+}
+
+.porisso .circulos .cr13{
+	background: url("../images/circulos/cr13.png") no-repeat;
+	background-size: 100%;
+	width: 274px;
+	height: 276px;
+}
+
+.porisso .circulos .cr14{
+	background: url("../images/circulos/cr14.png") no-repeat;
+	background-size: 100%;
+	width: 335px;
+	height: 347px;
+}
+
+.porisso .circulos .cr15{
+	background: url("../images/circulos/cr15.png") no-repeat;
+	background-size: 100%;
+	width: 263px;
+	height: 267px;
+}
+
+.porisso .circulos .cr16{
+	background: url("../images/circulos/cr16.png") no-repeat;
+	background-size: 100%;
+	width: 247px;
+	height: 249px;
+}
+
+.porisso .circulos .cr17{
+	background: url("../images/circulos/cr17.png") no-repeat;
+	background-size: 100%;
+	width: 269px;
+	height: 273px;
+}
+
+.porisso .circulos .cr18{
+	background: url("../images/circulos/cr18.png") no-repeat;
+	background-size: 100%;
+	width: 289px;
+	height: 292px;
+}
+
+.porisso .circulos .cr19{
+	background: url("../images/circulos/cr19.png") no-repeat;
+	background-size: 100%;
+	width: 269px;
+	height: 274px;
+}
+
+.porisso .circulos .cr20{
+	background: url("../images/circulos/cr20.png") no-repeat;
+	background-size: 100%;
+	width: 265px;
+	height: 268px;
+}
+
+.porisso .circulos .cr21{
+	background: url("../images/circulos/cr21.png") no-repeat;
+	background-size: 100%;
+	width: 343px;
+	height: 340px;
+}
+
+.porisso .latas{}
+
+.porisso .latas li{
+	position: absolute;
+	z-index: 999;
+	left: 660px;
+	top: 400px;
+	opacity: 0;
+}
+
+.porisso .latas .lt01,
+.porisso .latas .lt02,
+.porisso .latas .lt03,
+.porisso .latas .lt04,
+.porisso .latas .lt05,
+.porisso .latas .lt06,
+.porisso .latas .lt07,
+.porisso .latas .lt08{
+	animation-delay:2s;
+	background-size: 100%;
+	opacity: 0;
+}
+
+.porisso .latas .lt01{
+	background: url("../images/latas/lt01.png") no-repeat;
+	width: 115px;
+	height: 214px;
+}
+
+.porisso .latas .lt02{
+	background: url("../images/latas/lt02.png") no-repeat;
+	width: 119px;
+	height: 139px;
+}
+
+.porisso .latas .lt03{
+	background: url("../images/latas/lt03.png") no-repeat;
+	width: 186px;
+	height: 156px;
+}
+
+.porisso .latas .lt04{
+	background: url("../images/latas/lt04.png") no-repeat;
+	width: 157px;
+	height: 110px;
+}
+
+.porisso .latas .lt05{
+	background: url("../images/latas/lt05.png") no-repeat;
+	width: 139px;
+	height: 120px;
+}
+
+.porisso .latas .lt06{
+	background: url("../images/latas/lt06.png") no-repeat;
+	width: 148px;
+	height: 193px;
+}
+
+.porisso .latas .lt07{
+	background: url("../images/latas/lt07.png") no-repeat;
+	width: 84px;
+	height: 131px;
+}
+
+.porisso .latas .lt08{
+	background: url("../images/latas/lt08.png") no-repeat;
+	width: 105px;
+	height: 126px;
+}
+
+.porisso .gotas li{
+	position: absolute;
+	left: 670px;
+	top: 411px;
+}
+
+.porisso .gotas .gt01,
+.porisso .gotas .gt02,
+.porisso .gotas .gt03,
+.porisso .gotas .gt04,
+.porisso .gotas .gt05{
+	animation-delay:2.5s;
+}
+
+.porisso .gotas .gt01{
+	background: url("../images/gotas/gt01.png") no-repeat;
+	width: 97px;
+	height: 139px;
+}
+
+.porisso .gotas .gt02{
+	background: url("../images/gotas/gt02.png") no-repeat;
+	width: 85px;
+	height: 150px;
+}
+
+.porisso .gotas .gt03{
+	background: url("../images/gotas/gt03.png") no-repeat;
+	width: 102px;
+	height: 128px;
+}
+
+.porisso .gotas .gt04{
+	background: url("../images/gotas/gt04.png") no-repeat;
+	width: 139px;
+	height: 95px;
+}
+
+.porisso .gotas .gt05{
+	background: url("../images/gotas/gt05.png") no-repeat;
+	width: 113px;
+	height: 119px;
+}
+
+/* TODO MUNDO */
+
+.mundo{
+	width: 1280px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.mundo .ico08{
+	background: url("../images/ico08.gif") no-repeat;
+	background-size: 100%;
+	height: 409px;
+    position: absolute;
+    width: 322px;
+    opacity: 0;
+}
+
+.mundo .todomundo{
+	background: url("../images/frame.gif") no-repeat;
+	background-size: 100%;
+	height: 409px;
+    left: 300px;
+    position: absolute;
+    width: 540px;
+    z-index: 999;
+}
+
+.mundo .todomundo h1{
+	background: url("../images/todomundo.png") no-repeat;
+	background-size: 100%;
+	.replacetext;
+	width: 400px;
+	height: 174px;
+	margin: 32px 0 0 27px;
+}
+
+.mundo .todomundo p{
+	color: @3f6;
+	font-size: 21px;
+	line-height: 32px;
+	padding: 0 69px 0 34px;
+	margin-top: -20px;
+}
+
+.mundo .ico09{
+	background: url("../images/avioes.gif") no-repeat;
+	background-size: 100%;
+	height: 489px;
+    position: absolute;
+    right: -67px;
+    top: -48px;
+    width: 690px;
+}
+
+.mundo .ico10{
+	background: url("../images/placa.png") no-repeat;
+	background-size: 100%;
+	position: absolute;
+	width: 165px;
+	height: 243px;
+	right: 97px;
+	top: 330px;
+}
+
+/* COMO FUNCIONA */
+
+.comofunciona{
+	width: 1280px;
+	margin: 460px auto 75px auto;
+	position: relative;
+}
+
+.comofunciona .ico11{
+	background: url("../images/maquinas.gif") no-repeat;
+	background-size: 100%;
+	width: 400px;
+	height: 425px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.comofunciona .table{
+	display: table;
+	margin-left: 360px;
+    position: relative;
+    top: 120px;
+}
+
+.comofunciona .table h1{
+	.replacetext;
+	background: url("../images/comofunciona.png") no-repeat;
+	background-size: 100%;
+	width: 528px;
+	height: 53px;
+	margin-bottom: 10px;
+}
+
+.comofunciona .table ul{}
+
+.comofunciona .table ul li{
+	background: url("../images/linha.png") no-repeat right top;
+	color: @000;
+	display: table-cell;
+    font-size: 17px;
+    line-height: 29px;
+    padding: 0 18px;
+    height: 360px;
+}
+
+.comofunciona .table ul li:first-child{
+	padding-left: 0;
+}
+
+.comofunciona .table ul li:last-child{
+	background: none;
+}
+
+.comofunciona .ico12{
+	background: url("../images/hand.gif") no-repeat;
+	background-size: 100%;
+    position: absolute;
+    width: 622px;
+    height: 432px;
+    top: 220px;
+    left: 234px;
+}
+
+.comofunciona .ico13{
+	background: url("../images/urna.gif") no-repeat;
+	background-size: 100%;
+    height: 349px;
+    position: absolute;
+    right: 126px;
+    top: 281px;
+    width: 324px;
+}
+
+.comofunciona .ico14{
+    background-size: 100%;
+    height: 153px;
+    position: absolute;
+    right: 400px;
+    top: 570px;
+    width: 377px;
+}
+
+.comofunciona .ico15{
+	background-size: 100%;
+	height: 216px;
+    position: absolute;
+    right: 380px;
+    top: 614px;
+    width: 318px;
+    z-index: 999;
+}
+
+/* E DEPOIS */
+
+.edepois{
+	position: relative;
+	width: 1230px;
+	height: 650px;
+	margin: 0 auto;
+}
+
+.edepois .ico16{
+	background: url("../images/ico16.png") no-repeat;
+	background-size: 100%;
+    position: absolute;
+    width: 305px;
+	height: 458px;
+    top: 0;
+}
+
+.edepois .textdepois{
+	left: 254px;
+    position: absolute;
+    top: 270px;
+}
+
+.edepois .textdepois h1{
+	.replacetext;
+	background: url("../images/edepois.gif") no-repeat;
+	background-size: 100%;
+	height: 87px;
+    width: 404px;
+    margin-left: -30px;
+}
+
+
+.edepois .textdepois p{
+	font-size: 23px;
+    line-height: 32px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    margin-left: -10px;
+}
+
+.edepois .ico17{
+	background: url("../images/pessoas.gif") no-repeat;
+	background-size: 100%;
+	height: 465px;
+    position: absolute;
+    right: 211px;
+    top: 300px;
+    width: 428px;
+}
+
+/* SETAS BOTTOM */
+
+.setas-bottom{
+	background: url("../images/setas-bottom.gif") no-repeat;
+	background-size: 100%;
+	width: 649px;
+	height: 300px;
+	margin: 0 auto;
+	left: -50px;
+	position: relative;
+}
+
+/* COMO ISSO TERMINA */
+
+.comotermina{
+	width: 1200px;
+	margin: -58px auto 977px;
+	position: relative;
+}
+
+.comotermina h1{
+	.replacetext;
+	background: url("../images/comotermina.gif") no-repeat;
+	background-size: 100%;
+	width: 964px;
+	height: 484px;
+	left: 120px;
+	position: absolute;
+}
+
+.comotermina .rock{
+	background: url("../images/rock.png") no-repeat;
+	background-size: 100%;
+    position: absolute;
+	height: 194px;
+	right: 80px;
+    top: 267px;
+    width: 108px;
+}
+
+.comotermina .grafite{
+	background: url("../images/grafite.png") no-repeat;
+	background-size: 100%;
+	height: 366px;
+    position: absolute;
+    right: 182px;
+    top: 371px;
+    width: 805px;
+}
+
+.comotermina .trofeu{
+	background: url("../images/trofeu.gif") no-repeat;
+	background-size: 100%;
+    position: absolute;
+    width: 472px;
+	height: 696px;
+    left: 25px;
+    top: 171px;
+    z-index: 999;
+}
+
+.comotermina .circulo{
+    background: url("../images/circulo.gif") no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+	height: 247px;
+    left: 320px;
+    position: absolute;
+    top: 408px;
+    width: 554px;
+    text-align: center;
+    z-index: 999;
+
+		> a{
+			font-size: 19px;
+			line-height: 26px;
+			position: relative;
+			text-align: center;
+			top: 72px;
+			color: #B62025;
+
+				> span{
+					text-align: center;
+
+					> strong{
+						background: url("../images/curtiu.png") no-repeat center center;
+						.bgsize(50%);
+						.replacetext;
+						width: 100%;
+						height: 37px;
+						display: block;
+						margin-bottom: -20px;
+					}
+				}
+		}
+
+	    &:hover{
+			background: url("../images/circulo-hover.gif") no-repeat;
+	    }
+}
+.comotermina .circulo .curtiu{
+	position: relative;
+	margin: 81px auto;
+}
+
+.comotermina .mundo{
+	background: url("../images/mundo.gif") no-repeat;
+	background-size: 100%;
+	height: 488px;
+    position: absolute;
+    right: -60px;
+    top: 430px;
+    width: 478px;
+}
+
+/* REGULAMENTO */
+
+.regulamento{
+	width: 810px;
+	margin: 80px auto;
+	position: relative;
+}
+
+.regulamento .botoes{
+	display: table;
+	width: 100%;
+	padding: 0 23px;
+}
+
+.regulamento .botoes li{
+	display: table-cell;
+	position: relative;
+}
+
+.regulamento .botoes li a{
+	background: url("../images/box-risco.png") no-repeat;
+	background-size: 100%;
+	font-size: 22px;
+	color: @0f4;
+	display: block;
+	text-align: center;
+    width: 273px;
+	height: 106px;
+	text-transform: uppercase;
+	line-height: 27px;
+}
+.regulamento .botoes li a span{
+	top: 29px;
+	position: relative;
+}
+
+.regulamento .botoes li.right{
+	text-align: right;
+	background-position: right;
+}
+
+.regulamento .botoes li.right a{
+	right: -100px;
+	position: relative;
+}
+
+.regulamento .title{
+	.replacetext;
+	background: url("../images/text-regulamento.png") no-repeat center;
+	background-size: 90%;
+	height: 90px;
+	margin-bottom: 20px;
+}
+
+.regulamento .text-regula{
+	height: 630px;
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+}
+
+.regulamento .table{
+	display: table;
+	margin-bottom: 40px;
+}
+
+.regulamento .text-regula .paragrafo{
+	font-size: 12px;
+	color: @065;
+	line-height: 18px;
+	font-family: Arial;
+	padding: 0 20px;
+}
+
+.regulamento .table ul{
+	display: table-cell;
+	font-size: 12px;
+	color: @065;
+	line-height: 18px;
+	font-family: Arial;
+	padding: 0 20px;
+}
+
+.regulamento .table ul.first{
+	padding-left: 0;
+}
+
+.regulamento .table ul.last{
+	padding-right: 0;
+}
+
+.regulamento .table h1{
+	margin: 20px 0;
+	font-weight: bold;
+}
+
+.regulamento .table h1.space{
+	width: 300px;
+}
+
+.regulamento .table h2{
+	font-family: "Annie Use Your Telescope";
+	text-transform: uppercase;
+	font-size: 20px;
+	margin-bottom: 20px;
+	display: table-caption;
+	width: 160px;
+}
+
+.regulamento .table p{
+	margin: 10px 0;
+}
+
+.regulamento .title-faculdade{
+	.replacetext;
+	background: url("../images/title-faculdades.png") no-repeat;
+	background-size: 100%;
+	height: 135px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.regulamento .back-home{
+	top: -20px;
+	position: relative;
+	font-size: 18px;
+	text-transform: uppercase;
+	line-height: 22px;
+	color: @c123;
+	margin-bottom: 20px;
+
+	&:hover{
+		opacity: 0.8;
+	}
+}
+
+.regulamento .back-home .back-text{
+	background: url("../images/back-home.png") no-repeat left center;
+	padding-left: 50px;
+	display: block;
+}
+
+.regulamento .back-home .risco-back{
+	background: url("../images/risco-back-home.png") no-repeat left bottom;
+	display: block;
+    left: 34px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.social-buttons{
+	position: absolute;
+	background: url("../images/box-social.png") no-repeat;
+	top: -119px;
+	width: 154px;
+	height: 53px;
+}
+
+.social-buttons h1{
+	left: 9px;
+    position: relative;
+    top: -16px;
+}
+
+.social-buttons .addthis{
+	top: 10px;
+	left: 8px;
+	position: relative;
+}

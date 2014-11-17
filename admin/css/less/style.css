@@ -1,0 +1,1434 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a,
+input,
+button,
+textarea {
+  outline: 0;
+}
+@font-face {
+  font-family: "Annie Use Your Telescope";
+  src: url('../../../global/css/fonts/AnnieUseYourTelescope.svg#Annie Use Your Telescope') format('svg'), url('../../../global/css/fonts/AnnieUseYourTelescope.woff') format('woff'), url('../../../global/css/fonts/AnnieUseYourTelescope.eot?#iefix') format('embedded-opentype'), url('../../../global/css/fonts/AnnieUseYourTelescope.ttf') format('truetype'), url('../../../global/css/fonts/AnnieUseYourTelescope.eot');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: url('../../../global/css/fonts/ProximaNova-Bold.svg#Proxima Nova Bold') format('svg'), url('../../../global/css/fonts/ProximaNova-Bold.woff') format('woff'), url('../../../global/css/fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'), url('../../../global/css/fonts/ProximaNova-Bold.ttf') format('truetype'), url('../../../global/css/fonts/ProximaNova-Bold.eot');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Regular";
+  src: url('../../../global/css/fonts/ProximaNova-Regular.svg#Proxima Nova Regular') format('svg'), url('../../../global/css/fonts/ProximaNova-Regular.woff') format('woff'), url('../../../global/css/fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('../../../global/css/fonts/ProximaNova-Regular.ttf') format('truetype'), url('../../../global/css/fonts/ProximaNova-Regular.eot');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Regular Italic";
+  src: url('../../../global/css/fonts/ProximaNova-RegItalic.svg#Proxima Nova Rg') format('svg'), url('../../../global/css/fonts/ProximaNova-RegItalic.woff') format('woff'), url('../../../global/css/fonts/ProximaNova-RegItalic.eot?#iefix') format('embedded-opentype'), url('../../../global/css/fonts/ProximaNova-RegItalic.ttf') format('truetype'), url('../../../global/css/fonts/ProximaNova-RegItalic.eot');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Light";
+  src: url('../../../global/css/fonts/ProximaNova-Light.svg#Proxima Nova Lt') format('svg'), url('../../../global/css/fonts/ProximaNova-Light.woff') format('woff'), url('../../../global/css/fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'), url('../../../global/css/fonts/ProximaNova-Light.ttf') format('truetype'), url('../../../global/css/fonts/ProximaNova-Light.eot');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Light Italic";
+  src: url('../../../global/css/fonts/ProximaNova-LightItalic.svg#Proxima Nova Lt') format('svg'), url('../../../global/css/fonts/ProximaNova-LightItalic.woff') format('woff'), url('../../../global/css/fonts/ProximaNova-LightItalic.eot?#iefix') format('embedded-opentype'), url('../../../global/css/fonts/ProximaNova-LightItalic.ttf') format('truetype'), url('../../../global/css/fonts/ProximaNova-LightItalic.eot');
+  font-weight: normal;
+  font-style: normal;
+}
+.replacetext {
+  text-indent: 160%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* SETA VOLTAR AO TOPO */
+.st-block {
+  opacity: 1 !important;
+}
+.back-top.st-top {
+  bottom: 150px;
+}
+/* Configuração de grid */
+.row {
+  width: 100%;
+}
+.row label {
+  margin-bottom: 15px;
+  display: block;
+  position: relative;
+}
+.row label span,
+.row label small {
+  display: block;
+  margin-bottom: 8px;
+}
+.row label input {
+  width: 100%;
+  padding: 2px 10px;
+  border: 0;
+  height: 53px;
+}
+.row *[class^='rw-'] {
+  margin-right: 5%;
+  float: left;
+}
+.row *[class^='rw-'] > * {
+  width: 100%;
+}
+.row .rw-large-1 {
+  width: 100%;
+}
+.row .rw-small-2 {
+  width: 45%;
+}
+.row .rw-small-3 {
+  width: 28.333333333333332%;
+}
+.row .rw-small-4 {
+  width: 20%;
+}
+i.spr01 {
+  background: url("../../../global/css/images/icons/spr01.png") no-repeat center center;
+  display: inline-block;
+  width: 100%;
+  height: 32px;
+}
+i.spr02 {
+  background: url("../../../global/css/images/icons/spr02.png") no-repeat center center;
+  display: inline-block;
+  width: 100%;
+  height: 38px;
+}
+i.spr03 {
+  background: url("../../../global/css/images/icons/spr03.png") no-repeat center center;
+  display: inline-block;
+  width: 100%;
+  height: 32px;
+}
+i.spr04 {
+  background: url("../../../global/css/images/icons/spr04.png") no-repeat center center;
+  display: inline-block;
+  width: 100%;
+  height: 45px;
+}
+i.spr05 {
+  background: url("../../../global/css/images/icons/spr05.png") no-repeat center center;
+  display: inline-block;
+  width: 100%;
+  height: 63px;
+}
+/* Definição de botão padrão */
+/** Button Large **/
+.btn-large {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  font-family: "Proxima Nova Bold";
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  line-height: 71px;
+  display: inline-block;
+  height: 69px;
+  background-color: #ccc;
+  color: #444;
+  font-size: 15px;
+  border: 0px;
+  border-bottom: 3px solid #878787;
+  cursor: pointer;
+  padding: 0 30px;
+}
+.btn-large:hover {
+  background-color: #bababa;
+}
+.btn-large:active {
+  background-color: #bababa;
+  border-color: #bababa;
+}
+/** Button Short **/
+.btn-short {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  font-family: "Proxima Nova Bold";
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  width: 40px;
+  line-height: 37px;
+  display: inline-block;
+  background-color: #ccc;
+  color: #444;
+  font-size: 15px;
+  border: 0px;
+  border-bottom: 3px solid #878787;
+  cursor: pointer;
+}
+.btn-short:hover {
+  background-color: #bababa;
+}
+.btn-short:active {
+  background-color: #bababa;
+  border-color: #bababa;
+}
+/** Button Small **/
+.btn-small {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  font-family: "Proxima Nova Bold";
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 30px 16px 30px;
+  display: inline-block;
+  background-color: #ccc;
+  color: #444;
+  font-size: 15px;
+  border: 0px;
+  border-bottom: 3px solid #878787;
+  cursor: pointer;
+}
+.btn-small:hover {
+  background-color: #bababa;
+}
+.btn-small:active {
+  background-color: #bababa;
+  border-color: #bababa;
+}
+/* Cores de botões */
+.green {
+  background-color: #0a9127;
+  border-color: #00800f;
+  color: #ffffff;
+}
+.green:hover {
+  background-color: #33b943;
+}
+.green:active {
+  background-color: #33b943;
+  border-color: #33b943;
+}
+.blue {
+  background-color: #054dbc;
+  border-color: #033277;
+  color: #ffffff;
+}
+.blue:hover {
+  background-color: #0259db;
+}
+.blue:active {
+  background-color: #0259db;
+  border-color: #0259db;
+}
+.grey {
+  background-color: #7f7f7f;
+  border-color: #535252;
+  color: #ffffff;
+}
+.grey:hover {
+  background-color: #a3a2a2;
+}
+.grey:active {
+  background-color: #a3a2a2;
+  border-color: #a3a2a2;
+}
+.prussia {
+  background-color: #1d2a44;
+  border-color: #0d131f;
+  color: #ffffff;
+}
+.prussia:hover {
+  background-color: #2a3c62;
+}
+.prussia:active {
+  background-color: #2a3c62;
+  border-color: #2a3c62;
+}
+.mskbody {
+  overflow: hidden;
+}
+.mskmask {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0px;
+  z-index: 99999;
+}
+.mskmask .close-mask {
+  background: url("../../../global/css/images/close.png") no-repeat center center;
+  text-indent: 160%;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 11px;
+  text-align: right;
+}
+.mskhide {
+  display: none;
+}
+.mskshow {
+  display: block;
+}
+hr {
+  clear: both;
+  position: relative;
+  float: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Annie Use Your Telescope";
+}
+/* LINKS GLOBAL */
+a {
+  font-family: "Annie Use Your Telescope";
+  text-decoration: none;
+  color: #0653a5;
+}
+/* Padronização de paddings entre outros */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* MENSAGEM DE BROWSER */
+.browserversion {
+  display: none;
+  background: url("../../../global/css/images/nuvem.png") repeat-x;
+  height: 127px;
+}
+.browserversion .msgn {
+  width: 880px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 13px 0;
+  position: relative;
+}
+.browserversion .msgn .close {
+  text-indent: 160%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: url("../../../global/css/images/close.png") no-repeat;
+  position: absolute;
+  width: 21px;
+  height: 26px;
+  top: 4px;
+  right: -23px;
+}
+.browserversion .msgn a {
+  color: #ffffff;
+  font-size: 14px;
+}
+.browserversion .msgn .link {
+  padding-bottom: 9px;
+  background: url("../../../global/css/images/cliqueaviso.png") left bottom no-repeat;
+}
+.browserversion .msgn .link:hover {
+  background: url("../../../global/css/images/cliqueaviso-hover.png") left bottom no-repeat;
+}
+.browserversion .msgn .traco {
+  padding-bottom: 5px;
+  background: url("../../../global/css/images/olhaso.png") left bottom no-repeat;
+}
+/* SETA VOLTAR AO TOPO */
+.back-top {
+  z-index: 9999;
+  background: url("../../../global/css/images/back-top.png") no-repeat top center;
+  font-size: 13px;
+  width: 100px;
+  text-align: center;
+  height: 50px;
+  bottom: 50px;
+  opacity: 0;
+  position: fixed;
+  right: 40px;
+  color: #b70a0a;
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+.back-top:hover {
+  background-image: url("../../../global/css/images/back-top-hover.png");
+}
+.back-top span {
+  position: absolute;
+  bottom: -20px;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+/* ALIGN */
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+/* MSG ERROR */
+.field-validation-error {
+  color: #d80338;
+  font-size: 14px;
+  margin-top: 7px;
+  margin-bottom: 0 !important;
+}
+.field-validation-sucess {
+  color: #00800f;
+  display: none;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.field-validation-sucess.show {
+  display: inline-block;
+}
+.field-validation-sucess.hide {
+  display: none;
+}
+/* FOOTER */
+.footer {
+  background: url("../../../global/css/images/bg-footer.png") repeat-x;
+  width: 100%;
+  height: 112px;
+  position: absolute;
+}
+.footer .center {
+  margin: 0 auto;
+  position: relative;
+  width: 980px;
+  top: 42px;
+}
+.footer .regras {
+  padding: 20px 0;
+  float: left;
+}
+.footer .regras li {
+  font-family: "Annie Use Your Telescope";
+  display: inline;
+  color: #ffffff;
+}
+.footer .regras li:first-child {
+  padding: 0 20px 0 0px;
+}
+.footer .regras li a {
+  color: #ffffff;
+  font-size: 13px;
+  padding: 0 20px;
+  text-decoration: none;
+}
+.footer .regras li a:hover {
+  text-decoration: underline;
+}
+.footer .regras li a.redbull {
+  font-size: 16px;
+  padding-left: 0;
+}
+.footer .social {
+  float: right;
+  padding: 12px 0;
+}
+.footer .social li {
+  display: inline;
+  padding: 0 8px;
+}
+.footer .social li a {
+  display: inline-block;
+  text-decoration: none;
+}
+.footer .social li a:hover {
+  position: relative;
+  top: -3px;
+}
+.dhide {
+  display: none;
+}
+/*======================================================================
+  Selectric
+======================================================================*/
+.selectricWrapper {
+  position: relative;
+  margin: 0 0 0px;
+  width: 100%;
+  cursor: pointer;
+}
+.selectricResponsive {
+  width: 100%;
+}
+.selectric {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  font-family: "Proxima Nova Regular Italic";
+  border: 1px solid #d4d4d4;
+  background: #ffffff;
+  position: relative;
+  height: 53px;
+}
+.selectric .label {
+  display: block;
+  font-family: "Proxima Nova Regular Italic";
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 30px 0 0;
+  padding: 6px 10px;
+  font-size: 17px;
+  line-height: 40px;
+  color: #676767;
+}
+.selectric .button {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 36px;
+  height: 51px;
+  color: #BBB;
+  text-align: center;
+  font: 0/0 a;
+  /* IE Fix */
+  *font: 0.6666666666666666px Lucida Sans Unicode, Arial Unicode MS, Arial;
+}
+.selectric .button:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-top-color: #BBB;
+  border-bottom: none;
+}
+.selectricHover .selectric {
+  border-color: #CCC;
+}
+.selectricHover .selectric .button {
+  color: #888;
+}
+.selectricHover .selectric .button:after {
+  border-top-color: #888;
+}
+.selectricOpen {
+  z-index: 9999;
+}
+.selectricOpen .selectric {
+  border-color: #CCC;
+  background: #ffffff;
+  z-index: 9999;
+}
+.selectricOpen .selectricItems {
+  display: block;
+  font-family: "Proxima Nova Regular";
+}
+.selectricDisabled {
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.selectricDisabled .selectric {
+  border: 1px solid #d4d4d4;
+  background-color: #F0F0F0;
+}
+.selectricDisabled .selectric .label {
+  color: #676767;
+}
+.selectricHideSelect {
+  position: relative;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
+.selectricHideSelect select {
+  position: absolute;
+  left: -100%;
+  display: none;
+}
+.selectricInput {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  outline: none !important;
+  border: none !important;
+  *font: NaN a !important;
+  background: none !important;
+}
+.selectricTempShow {
+  position: absolute !important;
+  visibility: hidden !important;
+  display: block !important;
+}
+/* Items box */
+.selectricItems {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  top: 85%;
+  right: 0;
+  background: #F9F9F9;
+  border: 1px solid #CCC;
+  z-index: 9999;
+  -webkit-box-shadow: 0 0 10px -6px;
+  box-shadow: 0 0 10px -6px;
+}
+.selectricItems ul,
+.selectricItems li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  line-height: 20px;
+  min-height: 20px;
+}
+.selectricItems li {
+  display: block;
+  padding: 5px;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #EEE;
+  color: #666;
+  cursor: pointer;
+}
+.selectricItems li.selected {
+  background: #EFEFEF;
+  color: #444;
+  border-top-color: #E0E0E0;
+}
+.selectricItems li:hover {
+  background: #F0F0F0;
+  color: #444;
+}
+.selectricItems li.disabled {
+  background: #F5F5F5;
+  color: #BBB;
+  border-top-color: #FAFAFA;
+  cursor: default;
+}
+html.login {
+  background: url("../images/bg-login.jpg") no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* Tela de login */
+}
+html.login body {
+  font-family: "Annie Use Your Telescope";
+}
+html.login h1.logo {
+  text-indent: 160%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: url("../images/lg-login.png") no-repeat;
+  width: 350px;
+  height: 238px;
+  margin: 3% auto 0;
+}
+html.login h2.logo-subtitle {
+  font-size: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px auto 40px;
+}
+html.login .center {
+  width: 350px;
+  margin: 0 auto;
+}
+html.login .form-login .rw-large-1 {
+  position: relative;
+}
+html.login label span.msgn-erro,
+html.login label span.msgn-erro-pass {
+  display: none;
+}
+html.login label.erro {
+  position: relative;
+}
+html.login label.erro span {
+  color: #d80338;
+}
+html.login label.erro span.msgn-erro {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  top: 0;
+  color: #d80338;
+  font-size: 14px;
+  margin-right: 5px;
+  text-align: right;
+}
+html.login label.erro span.msgn-erro-pass {
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  top: 0;
+  color: #d80338;
+  font-size: 14px;
+  margin-right: 5px;
+  text-align: right;
+}
+html.login label.erro input {
+  background-image: url("../images/input-login-erro.png");
+}
+html.login .recover span.msgn-erro {
+  right: 11px !important;
+  top: 36px !important;
+}
+html.login input {
+  background: url("../images/input-login.png") no-repeat;
+  font-family: "Annie Use Your Telescope";
+  height: 44px;
+  font-size: 15px;
+}
+html.login button.submit {
+  background: url("../images/bt-login.png") no-repeat;
+  font-family: "Annie Use Your Telescope";
+  cursor: pointer;
+  display: block;
+  border: 0;
+  width: 100%;
+  height: 62px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: normal;
+}
+html.login button.submit:hover {
+  opacity: 0.9;
+}
+html.login .remember-login {
+  text-align: right;
+  padding-right: 6px;
+}
+html.login .remember-pass {
+  text-decoration: underline;
+  font-size: 16px;
+  color: #000000;
+}
+html.login .remember-pass:hover {
+  text-decoration: none;
+}
+/* Fim da tela de login */
+/* Master Page Painel administrativo */
+.admin {
+  height: 100%;
+  /* Definição de dados da modal */
+}
+.admin body {
+  height: 100%;
+  font-family: "Proxima Nova Regular";
+}
+.admin body .header {
+  background-color: #354f77;
+  width: 100%;
+  height: 90px;
+  display: table;
+  z-index: 200;
+  position: relative;
+}
+.admin body .header .center {
+  display: table;
+  width: 980px;
+  height: 100%;
+}
+.admin body .header .center .logo {
+  text-indent: 160%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-right: -68px;
+  background: url("../images/lg-redbull-admin.png") no-repeat center center #ffffff;
+  display: block;
+  width: 150px;
+  height: 90px;
+}
+.admin body .header .center .breadcrumb {
+  font-family: "Proxima Nova Bold";
+  color: #ffffff;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 18px;
+  padding-left: 20px;
+  text-align: left;
+}
+.admin body .header .center .breadcrumb span {
+  color: #b9c3d3;
+}
+.admin body .header .center .breadcrumb .space {
+  width: 300px;
+  text-align: left;
+}
+.admin body .header .center .logado {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+}
+.admin body .header .center .logado h3 {
+  font-family: "Proxima Nova Bold";
+  color: #ffffff;
+  font-size: 16px;
+}
+.admin body .header .center .logado a {
+  font-family: "Proxima Nova Light Italic";
+  color: #b9c3d3;
+  font-size: 14px;
+  text-decoration: none;
+}
+.admin body .header .center .logado a:hover {
+  text-decoration: underline;
+}
+.admin body .menu {
+  margin-top: -90px;
+  margin-right: 20px;
+  width: 150px;
+  background-color: #dbdfe5;
+  position: relative;
+  z-index: 100;
+  float: left;
+  font-family: "Proxima Nova Bold";
+}
+.admin body .menu .list {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin-top: 90px;
+}
+.admin body .menu .list li {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.admin body .menu .list li a {
+  display: block;
+  font-size: 14px;
+  color: #4f6c98;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 30px 0;
+  border-bottom: 1px solid #ffffff;
+  font-family: "Proxima Nova Bold";
+}
+.admin body .menu .list li a.selected:after {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #ffffff;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  content: "";
+  display: block;
+}
+.admin body .menu .list li a i {
+  margin-bottom: 10px;
+}
+.admin body .menu .list li a span {
+  line-height: 18px;
+}
+.admin body .widget {
+  background-color: #f4f4f4;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.admin body .widget .pager {
+  text-align: center;
+}
+.admin body .widget .pager li {
+  display: inline-block;
+}
+.admin body .widget .pager li a {
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  font-family: "Proxima Nova Regular";
+  color: #878787;
+  font-size: 15px;
+  width: 13px;
+  height: 13px;
+  text-indent: 160%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  background-color: #dbdfe5;
+  display: inline-block;
+}
+.admin body .widget .pager li a:hover {
+  background-color: #aaaaaa;
+}
+.admin body .widget .pager li a.active {
+  background-color: #878787;
+}
+.admin body .widget .tpages {
+  display: table-cell;
+  height: 53px;
+  vertical-align: middle;
+}
+.admin body .widget .rw-list .rw-small-2 {
+  margin-bottom: 0;
+  margin-right: 0;
+  width: 50%;
+}
+.admin body .widget .rw-list .selectricItems {
+  right: -48px;
+}
+.admin body .widget .rw-list .rw-small-3 {
+  margin-bottom: 0;
+}
+.admin body .widget .rw-list .rw-small-3.last {
+  margin-right: 0;
+}
+.admin body .widget .rw-list .rw-small-3.last span {
+  display: table-cell;
+  text-align: right;
+  color: #354f77;
+  font-family: "Proxima Nova Regular";
+  text-transform: uppercase;
+  padding-right: 20px;
+  vertical-align: middle;
+  font-size: 15px;
+}
+.admin body .widget .rw-list .rw-small-3.last .selectricWrapper {
+  display: table-cell;
+  width: 100%;
+}
+.admin body .widget .rw-list .rw-small-3.last .selectric {
+  width: 180px;
+}
+.admin body .widget .wg-title {
+  font-family: "Proxima Nova Bold";
+  font-size: 24px;
+  color: #354f77;
+  margin-bottom: 20px;
+}
+.admin body .widget .wg-title span {
+  line-height: 55px;
+}
+.admin body .widget .wg-title .wg-search-form span {
+  float: left;
+}
+.admin body .widget .wg-title .wg-search-form input {
+  width: 445px;
+  height: 55px;
+  padding-right: 63px;
+  font-size: 16px;
+  float: right;
+}
+.admin body .widget .wg-title .wg-search-form .submit {
+  background-image: url("../images/lupa-01.png");
+  width: 67px;
+  height: 55px;
+}
+.admin body .widget .wg-title.num-voto {
+  margin: 0;
+}
+.admin body .widget .wg-title.wg-border {
+  border-bottom: 1px solid #d4d4d4;
+  padding-bottom: 5px;
+}
+.admin body .widget .wg-title .block,
+.admin body .widget .wg-title .btn-trash {
+  display: none;
+}
+.admin body .widget .wg-no-border {
+  border: 0;
+  margin-bottom: 0;
+}
+.admin body .widget .wg-sub-title {
+  font-family: "Proxima Nova Bold";
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #676767;
+  margin-bottom: 20px;
+}
+.admin body .widget .wg-3-title {
+  font-family: "Proxima Nova Bold";
+  font-size: 20px;
+  color: #354f77;
+  margin-bottom: 5px;
+}
+.admin body .widget .wg-4-title {
+  font-family: "Proxima Nova Regular";
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #354f77;
+  margin-bottom: 10px;
+}
+.admin body .widget .item {
+  margin-bottom: 25px;
+}
+.admin body .widget .item.last {
+  margin-bottom: 0;
+}
+.admin body .widget .wg-search-form {
+  position: relative;
+}
+.admin body .widget .wg-search-form .input {
+  height: 69px;
+  font-size: 18px;
+  font-family: "Proxima Nova Light Italic";
+  padding: 0 80px 0 15px;
+}
+.admin body .widget .wg-search-form .submit {
+  text-indent: 160%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: url("../images/lupa.png") no-repeat center center;
+  border: 0;
+  width: 65px;
+  height: 69px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.admin body .widget .wg-search-form .submit:hover {
+  opacity: 0.8;
+}
+.admin body .widget .info-stats {
+  margin-bottom: 0;
+}
+.admin body .widget .info-stats.vd {
+  color: #0a9127;
+  border-left: 3px solid;
+  border-color: #0a9127;
+  padding-left: 20px;
+}
+.admin body .widget .info-stats.be {
+  color: #354f77;
+  border-left: 3px solid;
+  border-color: #354f77;
+  padding-left: 20px;
+}
+.admin body .widget .info-stats .bod-cad {
+  display: table-cell;
+  width: auto;
+  vertical-align: middle;
+  font-size: 62px;
+  font-family: "Proxima Nova Bold";
+}
+.admin body .widget .info-stats .bod-inf {
+  display: table-cell;
+  padding-left: 20px;
+  width: auto;
+  vertical-align: middle;
+  font-family: "Proxima Nova Regular";
+  font-size: 20px;
+}
+.admin body .widget .list-doodle .row .line {
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+.admin body .widget .list-doodle .row:last-child .line {
+  margin-bottom: 20px;
+}
+.admin body .widget .list-doodle .rw-small-3.first {
+  width: 160px;
+}
+.admin body .widget .list-doodle .rw-small-3.meio {
+  margin-right: 0;
+  width: 420px;
+}
+.admin body .widget .list-doodle .rw-small-3.last {
+  float: right;
+  margin-right: 0;
+  width: 140px;
+}
+.admin body .widget .list-doodle .rw-small-3 .img-doodle03 {
+  width: 160px;
+  height: 133px;
+}
+.admin body .widget .list-doodle .rw-small-3 .edit-doodle {
+  width: 130px;
+  padding: 17px 11px 14px 38px;
+  background-image: url("../../../global/css/images/edit.png");
+  background-repeat: no-repeat;
+  background-position: 17px center;
+  float: right;
+}
+.admin body .widget .list-doodle .rw-small-3 .edit-universidade {
+  padding: 11px 6px 10px 24px;
+}
+.admin body .widget .list-doodle .rw-small-3 .edit-universidade.change {
+  background-image: url("../images/canceled.png");
+}
+.admin body .widget .list-universidade .rw-small-3.meio,
+.admin body .widget .list-universidade .rw-small-3.last {
+  margin-bottom: 0;
+}
+.admin body .widget .list-universidade .line {
+  margin-bottom: 20px !important;
+}
+.admin body .content {
+  margin-top: 20px;
+  width: 820px;
+  float: left;
+  /* Imagens de doodles */
+}
+.admin body .content input {
+  font-family: "Proxima Nova Regular Italic";
+  font-size: 17px;
+  border: 1px solid #d4d4d4;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #676767;
+}
+.admin body .content input.error {
+  border-color: red;
+}
+.admin body .content label small {
+  font-family: "Proxima Nova Bold";
+  color: #676767;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.admin body .content label.error {
+  font-family: "Proxima Nova Regular";
+  font-size: 14px;
+  color: red;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.admin body .content .line {
+  border-bottom: 1px solid #d4d4d4;
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 20px 0;
+}
+.admin body .content .edit-dados {
+  display: none;
+}
+.admin body .content .form_doodle .rw-small-2 {
+  min-height: 111px;
+}
+.admin body .content .edit-disabled .block {
+  display: inline-block !important;
+  text-indent: 160%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url("../../../global/css/images/block.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  float: right;
+  top: 7px;
+  position: relative;
+  border: 0;
+  margin-right: 10px;
+}
+.admin body .content .edit-disabled .block.active {
+  background-color: #333333;
+}
+.admin body .content .edit-disabled .btn-trash {
+  display: inline-block !important;
+  text-indent: 160%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url("../../../global/css/images/trash.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  float: right;
+  top: 7px;
+  position: relative;
+  border: 0;
+  margin-right: 10px;
+}
+.admin body .content .edit-disabled .btn-trash:active {
+  background-color: #333333 !important;
+}
+.admin body .content .edit-disabled .btn-trash.last {
+  margin: 0;
+}
+.admin body .content .edit-disabled .edit-dados {
+  display: inline-block;
+  background-image: url("../../../global/css/images/edit.png");
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  width: 100px;
+  padding: 10px 0 8px 20px;
+  float: right;
+  font-size: 13px;
+}
+.admin body .content .edit-disabled .edit-dados.disabled {
+  background-color: #e0e0e0;
+  border-color: #e0e0e0;
+  cursor: default;
+}
+.admin body .content .edit-disabled .btn-cadastrar.disabled {
+  background-color: #33b943;
+  border: 0;
+  opacity: 0.6;
+  cursor: default;
+}
+.admin body .content .img-doodle01 {
+  width: 261px;
+  height: 217px;
+}
+.admin body .content .box-img-doodle {
+  height: 262px;
+  border: 4px dashed #354f77;
+}
+.admin body .content .box-img-doodle.active {
+  border: 0;
+  margin: 0;
+}
+.admin body .content .box-img-doodle.active .img-doodle02.active {
+  margin: 0;
+  height: 282px;
+}
+.admin body .content .img-doodle02 {
+  margin: 95px 130px;
+}
+.admin body .content .img-doodle02 .wg-4-title {
+  text-transform: none;
+  text-align: center;
+  font-size: 24px;
+}
+.admin body .content .img-doodle02 .spr05 {
+  margin-top: 20%;
+  margin-bottom: 10px;
+}
+.admin body .content .upload-image {
+  text-align: center;
+  margin-top: 75px;
+}
+.admin body .content .upload-image .text-upload {
+  color: #354f77;
+  font-family: "Proxima Nova Light";
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.admin body .content .file-input {
+  display: none;
+}
+.admin body .content .cad-universidades .first {
+  width: 50%;
+  margin-right: 3%;
+}
+.admin body .content .cad-universidades .meio {
+  margin-right: 0;
+}
+.admin body .content .cad-universidades .last {
+  margin-right: 0;
+  width: 16%;
+  margin-bottom: 0;
+  margin-top: 22px;
+  float: right;
+}
+.admin body .content .cad-universidades .last .btn-small {
+  padding: 16px 0;
+  text-align: center;
+}
+.admin body .not-found {
+  margin-bottom: 30px;
+  display: block;
+  font-size: 16px;
+}
+.admin body .block-check {
+  float: left;
+  width: auto;
+}
+.admin body .check-small > span {
+  height: 59px;
+  display: table-cell;
+  vertical-align: middle;
+  margin-bottom: 0;
+  padding-left: 10px;
+  font-size: 15px;
+  color: #354f77;
+}
+.admin .rw-modal {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+  padding: 90px 40px !important;
+  height: 294px;
+  background: #ffffff;
+  text-align: center;
+}
+.admin .rw-modal .buttons-mask {
+  margin-top: 40px;
+}
+.admin .rw-modal .buttons-mask a {
+  width: 150px;
+  margin-right: 10px;
+}
+.admin .rw-modal .buttons-mask .btn-conf-excluir {
+  background-image: url("../../../global/css/images/trash.png");
+  background-position: 23px center;
+  background-repeat: no-repeat;
+  text-align: right;
+}
+.admin .mskbox {
+  position: relative;
+  width: 60%;
+  margin: 10% auto;
+}
+.block-doodle .blk {
+  font-family: "Proxima Nova Regular";
+  font-size: 15px;
+  color: #d80338;
+}
